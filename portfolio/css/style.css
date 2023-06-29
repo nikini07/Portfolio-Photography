@@ -75,7 +75,7 @@ h1, h2, h3{
 
 /* header */
 #header{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/header-image.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/IMG_4783\ 19.32.41.JPG') center/cover no-repeat fixed;
     justify-content: flex-start;
     align-items: flex-end;
 }
@@ -165,9 +165,9 @@ h1, h2, h3{
 
 /* work */
 #work{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/header-image.jpg') center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/IMG_4785.JPG') center/cover no-repeat fixed;
     justify-content: flex-start;
-    align-items: flex-end;
+    align-items: center;
     color: var(--light-color);
 }
 #work .title h2, #work h3{
@@ -195,7 +195,7 @@ h1, h2, h3{
 
 /* contact */
 #contact{
-    background-color: rgb(248, 248, 248);
+    background-color: rgb(255, 253, 253);
 }
 .contact-content{
     flex-direction: column;
@@ -236,9 +236,44 @@ h1, h2, h3{
     background-color: #000;
 }
 
-#insta{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/header-image.jpg') center/cover no-repeat fixed;
-    min-height: 65vh;
+
+/* footer */
+#footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/IMG_4786.JPG') center/cover no-repeat fixed;
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h3{
+    color: var(--light-color);
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+.footer-content ul{
+    flex-direction: column;
+}
+.footer-content ul li a{
+    color: var(--light-color);
+    font-size: 1.5rem;
+    transition: var(--transition);
+}
+.footer-content ul li a:hover{
+    opacity: 0.7;
+}
+.footer-content ul li{
+    margin: .5rem 1rem;
+}
+.footer-content > div:first-child{
+    margin-bottom: 3rem;
+}
+.footer-content > div:first-child div{
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    margin: 5rem auto;
+    border-radius: 50%;
 }
 
 /* media queries */
@@ -271,10 +306,13 @@ h1, h2, h3{
     .contact-left form .form-control{
         max-width: 500px
     }
+    .footer-content ul{
+        flex-direction: row;
+    }
 }
 
 @media(min-width: 768px){
-    .header-content h1{
+    .headesr-content h1{
         font-size: 7rem;
     }
     .about-content{
@@ -287,10 +325,6 @@ h1, h2, h3{
     }
     .contact-content{
         flex-direction: row;
-    }
-    .contact-right{
-        padding-left: 3rem;
-        width: 50%;
     }
     .contact-left{
         width: 50%;
