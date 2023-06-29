@@ -189,7 +189,7 @@ h1, h2, h3{
 .portfolio-grid > div{
     transition: var(--transition);
 }
-.portfolio-grid > div::hover{
+.portfolio-grid > div:hover{
     transform: scale(0.9);
 }
 
@@ -235,6 +235,12 @@ h1, h2, h3{
 .contact-left .btn-submit:hover{
     background-color: #000;
 }
+
+#insta{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/header-image.jpg') center/cover no-repeat fixed;
+    min-height: 65vh;
+}
+
 /* media queries */
 @media(min-width: 450px){
     .work-bottom{
@@ -262,6 +268,9 @@ h1, h2, h3{
         height: 100%;
         object-fit: cover;
     }
+    .contact-left form .form-control{
+        max-width: 500px
+    }
 }
 
 @media(min-width: 768px){
@@ -276,6 +285,17 @@ h1, h2, h3{
     .about-left{
         margin-bottom: 0;
     }
+    .contact-content{
+        flex-direction: row;
+    }
+    .contact-right{
+        padding-left: 3rem;
+        width: 50%;
+    }
+    .contact-left{
+        width: 50%;
+    }
+
 }
 
 @media(min-width: 1200px){
